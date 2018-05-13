@@ -7,12 +7,9 @@ public class Regex {
 
 	public static void main(String[] args) {
 		
-//		String line = "GraphType = \"GraphPoet\" \"NetWork\" ";
 		String line = " \"0.65\" \"6\" \"String\" ";
 		System.out.println(line);
-//		String pattern = "(\\w+)\\W+(?:\"(\\w+)\")+";
 		String pattern = "\"(\\w+(?:\\.\\w+)?)\"";
-//		String pattern = "(GraphPoet|NetWork)";
 
 		Pattern p = Pattern.compile(pattern);
 		Matcher m = p.matcher(line);
